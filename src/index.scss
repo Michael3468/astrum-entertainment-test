@@ -1,0 +1,32 @@
+@import './shared/styles/variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  color: $color-main;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: $font-main;
+  background-color: $background-color;
+}
+
+a {
+  width: 100%;
+  color: $color-main;
+  text-decoration: none;
+}
+
+button {
+  height: fit-content;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
