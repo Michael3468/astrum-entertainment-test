@@ -5,28 +5,39 @@
   max-height: 892px;
   overflow: hidden;
 
+  // background image
   &__background {
     position: absolute;
     display: flex;
     width: 100%;
   }
 
+  // side and bottom layers
   &__layer_left,
-  &__layer_right {
+  &__layer_right,
+  &__layer_bottom {
     position: absolute;
-    width: 25%;
+    mix-blend-mode: multiply;
   }
 
   &__layer {
     &_left {
       left: 0;
+      width: 25%;
     }
 
     &_right {
       right: 0;
+      width: 25%;
+    }
+
+    &_bottom {
+      bottom: 0;
+      height: 20vw;
     }
   }
 
+  // characters
   &__mafia-costume {
     &_left {
       position: absolute;
@@ -43,5 +54,31 @@
       width: 35.2vw;
       height: 45.6vw;
     }
+  }
+
+  // glow
+  &__glow_bottom,
+  &__glow_center {
+    position: absolute;
+  }
+
+  &__glow {
+    &_bottom {
+      bottom: 0;
+      width: 96vw;
+      height: 9vw;
+    }
+
+    &_center {
+      width: 96vw;
+      mix-blend-mode: screen;
+    }
+  }
+
+  // logo
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
