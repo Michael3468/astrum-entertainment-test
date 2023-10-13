@@ -1,0 +1,47 @@
+.collectors-edition {
+  position: relative;
+  width: 100%;
+  height: 46.5vw;
+  max-height: 892px;
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    display: flex;
+    width: 100%;
+  }
+
+  &__layer_left,
+  &__layer_right {
+    position: absolute;
+    width: 25%;
+  }
+
+  &__layer {
+    &_left {
+      left: 0;
+    }
+
+    &_right {
+      right: 0;
+    }
+  }
+
+  &__mafia-costume {
+    &_left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30vw;
+      height: 45.6vw;
+    }
+
+    &_right {
+      position: absolute;
+      right: 1.33%;
+      bottom: 0;
+      width: 35.2vw;
+      height: 45.6vw;
+    }
+  }
+}
