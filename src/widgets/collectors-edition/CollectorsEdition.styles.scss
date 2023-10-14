@@ -80,5 +80,15 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 19.6vw;
+  }
+
+  // edition image
+  &__edition-image {
+    position: absolute;
+    left: 48.65%;
+    transform: translateX(-50%);
+    top: 26.27%;
+    width: 39.85vw;
   }
 }
