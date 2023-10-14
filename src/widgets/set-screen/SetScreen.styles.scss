@@ -1,0 +1,19 @@
+@import '../../shared/styles/variables.scss';
+
+.set {
+  display: flex;
+  top: 1.61vw;
+  height: 55vw;
+  background: url('/src/widgets/set-screen/assets/img/background_wall.jpg') no-repeat top center;
+  background-size: cover;
+
+  &__animal {
+    padding-top: 10.6vw;
+    padding-left: 12vw;
+    width: 50%;
+  }
+
+  &__pack {
+    width: 50%;
+  }
+}
