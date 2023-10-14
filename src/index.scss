@@ -1,3 +1,4 @@
+@import './shared/styles/fonts.scss';
 @import './shared/styles/variables.scss';
 
 * {
@@ -10,10 +11,15 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  color: $color-main;
   font-weight: 400;
   font-size: 14px;
   font-family: $font-main;
   background-color: $background-color;
+}
+
+h1 {
+  font-family: $font-second;
 }
 
 a {

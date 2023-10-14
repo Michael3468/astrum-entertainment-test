@@ -13,8 +13,9 @@ import { ICollectorsEditionProps } from './CollectorsEdition.types';
 
 import './CollectorsEdition.styles.scss';
 
-const CollectorsEdition: FC<ICollectorsEditionProps> = ({ editionImage }) => (
+const CollectorsEdition: FC<ICollectorsEditionProps> = ({ editionImage, caption, text }) => (
   <div className="collectors-edition">
+    {/* background and images */}
     <img className="collectors-edition__background" src={Background} />
     <img className="collectors-edition__layer_left" src={LayerLeft} />
     <img className="collectors-edition__layer_right" src={LayerRight} />
@@ -25,7 +26,14 @@ const CollectorsEdition: FC<ICollectorsEditionProps> = ({ editionImage }) => (
     <img className="collectors-edition__glow_center" src={GlowCenter} />
     <img className="collectors-edition__logo" src={Logo} />
 
+    {/* edition image */}
     <img className="collectors-edition__edition-image" src={editionImage} />
+
+    {/* text */}
+    <div className="collectors-edition__info">
+      <h1 className="collectors-edition__caption">{caption.toUpperCase()}</h1>
+      <p className="collectors-edition__text">{text}</p>
+    </div>
   </div>
 );
 

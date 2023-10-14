@@ -1,0 +1,19 @@
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+  src: local("Roboto"),
+       url("/fonts/Roboto-Regular.woff2") format("woff2"),
+       url("/fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  line-height: normal;
+  src: local("Roboto Condensed"),
+       url("/fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+       url("/fonts/RobotoCondensed-Bold.woff") format("woff");
+}

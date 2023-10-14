@@ -79,16 +79,45 @@
   &__logo {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     width: 19.6vw;
+    transform: translateX(-50%);
   }
 
   // edition image
   &__edition-image {
     position: absolute;
-    left: 48.65%;
-    transform: translateX(-50%);
     top: 26.27%;
+    left: 48.65%;
     width: 39.85vw;
+    transform: translateX(-50%);
+  }
+
+  // text
+  &__info {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  &__caption {
+    font-size: calc(14px + 1.46vw);
+    line-height: 1.55vw;
+
+    @media screen and (width <= 700px) {
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+
+  &__text {
+    font-size: calc(10px + 0.522vw);
+
+    @media screen and (width <= 700px) {
+      text-shadow: 1px 1px 1px black;
+    }
   }
 }
