@@ -2,18 +2,28 @@
 
 .set {
   display: flex;
-  top: 1.61vw;
   height: 55vw;
   background: url('/src/widgets/set-screen/assets/img/background_wall.jpg') no-repeat top center;
   background-size: cover;
 
   &__animal {
+    width: 50%;
     padding-top: 10.6vw;
     padding-left: 12vw;
-    width: 50%;
   }
 
   &__pack {
     width: 50%;
+    padding-right: 17.1vw;
+
+    &-caption {
+      margin-top: 3vw;
+      color: $color-third;
+      font-size: calc(10px + 1.04vw);
+
+      @media screen and (width <= 600px) {
+        text-align: center;
+      }
+    }
   }
 }

@@ -20,7 +20,7 @@ const SetScreen = () => (
     </div>
 
     <div className="set__pack">
-      <h2>Text</h2>
+      <h2 className="set__pack-caption">НАБОР «ПОСЫЛКА С КОНТРАБАНДОЙ»</h2>
     </div>
   </div>
 );
