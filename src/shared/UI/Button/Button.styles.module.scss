@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.button {
+  font-size: 12px;
+
+  @media screen and (width <= 600px) {
+    font-size: 10px;
+  }
+}

@@ -25,5 +25,17 @@
         text-align: center;
       }
     }
+
+    &-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 11px;
+      justify-content: flex-end;
+      margin-top: 2.35vw;
+
+      @media screen and (width <= 600px) {
+        justify-content: center;
+      }
+    }
   }
 }
