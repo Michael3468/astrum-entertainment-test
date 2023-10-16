@@ -1,0 +1,62 @@
+.set-pack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px 0;
+  margin-top: 0.45vw;
+
+  &-col {
+    display: flex;
+
+    &-1 {
+      flex: 0.3;
+    }
+
+    &-2 {
+      flex: 1.5;
+      padding-left: 3%;
+    }
+
+    &-3 {
+      flex: 0.92;
+    }
+
+    &-4 {
+      flex: 0.92;
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+
+    &-row {
+      display: flex;
+      background: rgb(0 0 0 / 55%);
+      border: 1px solid rgb(103 29 0 / 48%);
+    }
+
+    &-col {
+      display: flex;
+      align-items: center;
+      font-size: calc(12px + 0.2vw);
+
+      &-1 {
+        margin-top: 4px;
+        margin-left: 5px;
+
+        &-img {
+          width: 3.3vw;
+          min-width: 40px;
+          height: 3.31vw;
+          min-height: 40px;
+        }
+      }
+
+      &-3,
+      &-4 {
+        justify-content: center;
+      }
+    }
+  }
+}

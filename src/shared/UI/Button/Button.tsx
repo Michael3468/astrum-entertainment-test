@@ -16,6 +16,8 @@ const Button: FC<IButtonProps> = ({
   p,
   border,
   borderRadius,
+  width,
+  fontSize,
 }) => (
   <button
     className={styles.button}
@@ -29,6 +31,8 @@ const Button: FC<IButtonProps> = ({
       padding: `${p || ''}px`,
       border: `${border || 'none'}`,
       borderRadius: `${borderRadius || 0}px`,
+      width: `${width ? `${width}vw` : '100%'}`,
+      fontSize: `${fontSize || '12px'}`,
     }}
     type="button"
   >
