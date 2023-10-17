@@ -48,8 +48,10 @@
         &-img {
           width: 3.3vw;
           min-width: 40px;
+          max-width: 63.35px; // for 1920px
           height: 3.31vw;
           min-height: 40px;
+          max-height: 63.55px; // for 1920px
         }
       }
 
