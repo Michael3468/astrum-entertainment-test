@@ -1,8 +1,6 @@
 interface ISpotImageProps {
   image: string;
   color: string;
-  spotWidth: number;
-  spotHeight: number;
   imgWidth: number;
   imgHeight: number;
   imgTop?: number;

@@ -11,16 +11,16 @@ const SetScreen = () => (
   <div className="set">
     {/* dog */}
     <div className="set__animal">
-      <SpotImage
-        color="#416df4"
-        image={Vito}
-        imgHeight={46.5}
-        imgLeft={6.6}
-        imgTop={-9.05}
-        imgWidth={23.1}
-        spotHeight={34}
-        spotWidth={34}
-      />
+      <div className="set__animal-position">
+        <SpotImage
+          color="#416df4"
+          image={Vito}
+          imgHeight={157.5}
+          imgLeft={19.2}
+          imgTop={-30}
+          imgWidth={68.5}
+        />
+      </div>
     </div>
 
     {/* set pack */}

@@ -12,11 +12,23 @@
 
   &__animal {
     width: 50%;
-    padding-top: 10.6vw;
-    padding-left: 12vw;
 
     @media screen and (width <= 1200px) {
-      padding-left: 31vw;
+      width: 100%;
+    }
+
+    &-position {
+      width: 34vw;
+      max-width: 652.8px; // for 1920px
+      height: 34vw;
+      max-height: 652.8px; // for 1920px
+      margin-top: min(203.5px, 10.6vw);
+      margin-left: min(230.4px, 12vw);
+
+      @media screen and (width <= 1200px) {
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   }
 
@@ -55,6 +67,10 @@
       gap: 10px 11px;
       justify-content: flex-end;
       margin-top: 2.35vw;
+
+      @media screen and (width <= 700px) {
+        gap: 10px 1vw;
+      }
     }
 
     &-button {
