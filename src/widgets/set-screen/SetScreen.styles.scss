@@ -3,7 +3,7 @@
 .set {
   position: relative;
   display: flex;
-  background: url('/src/shared/assets/img/background_wall.jpg') no-repeat top center;
+  background: url('/src/shared/assets/img/background_wall.jpg') no-repeat top 33px center;
   background-size: contain;
 
   @media screen and (width <= 1200px) {
@@ -34,26 +34,26 @@
 
   &__pack {
     width: 50%;
-    padding-right: 17.1vw;
+    padding-right: min(328.4px, 17.1vw);
 
     @media screen and (width <= 1200px) {
       width: 100%;
-      padding-top: 40vw;
+      padding-top: 10vw;
       padding-right: 12vw;
       padding-left: 12vw;
     }
 
     @media screen and (width <= 700px) {
       width: 100%;
-      padding-top: 40vw;
+      padding-top: 10vw;
       padding-right: 2vw;
       padding-left: 2vw;
     }
 
     &-caption {
-      margin-top: 3vw;
+      margin-top: min(57.6px, 3vw);
       color: $color-third;
-      font-size: calc(10px + 1.04vw);
+      font-size: min(30px, calc(10px + 1.04vw));
 
       @media screen and (width <= 700px) {
         text-align: center;
@@ -66,7 +66,7 @@
       flex-wrap: wrap;
       gap: 10px 11px;
       justify-content: flex-end;
-      margin-top: 2.35vw;
+      margin-top: min(45.12px, 2.35vw);
 
       @media screen and (width <= 700px) {
         gap: 10px 1vw;
@@ -74,7 +74,7 @@
     }
 
     &-button {
-      width: 7.3vw;
+      width: min(140.15px, 7.3vw);
       height: auto;
       min-height: 23px;
       font-size: 12px;
@@ -117,7 +117,7 @@
     &-glow {
       position: absolute;
       bottom: 0;
-      width: 100vw;
+      width: min(1920px, 100vw);
     }
   }
 }

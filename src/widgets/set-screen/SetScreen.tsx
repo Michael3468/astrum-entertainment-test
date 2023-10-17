@@ -15,9 +15,9 @@ const SetScreen = () => (
         <SpotImage
           color="#416df4"
           image={Vito}
-          imgHeight={157.5}
+          imgHeight={136.5}
           imgLeft={19.2}
-          imgTop={-30}
+          imgTop={-26.5}
           imgWidth={68.5}
         />
       </div>
