@@ -1,9 +1,16 @@
 @import '../../styles/variables.scss';
 
 .button {
-  font-size: 12px;
+  font-size: inherit;
+  width: 100%;
+  height: 100%;
+  letter-spacing: inherit;
+}
 
-  @media screen and (width <= 600px) {
-    font-size: 10px;
-  }
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
 }

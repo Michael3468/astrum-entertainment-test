@@ -58,7 +58,11 @@
     }
 
     &-button {
-      width: 7.5vw;
+      width: 7.3vw;
+      height: auto;
+      min-height: 23px;
+      font-size: 12px;
+      letter-spacing: 0.1px;
 
       @media screen and (width <= 1200px) {
         width: 18vw;
@@ -66,11 +70,29 @@
 
       @media screen and (width <= 700px) {
         width: 22.2vw;
+        font-size: 10px;
       }
     }
 
     &-table {
       margin-top: 0.45vw;
+    }
+
+    &-order {
+      position: relative;
+      display: flex;
+      width: 450px;
+      height: 300px;
+      margin-top: 21px;
+      margin-left: 3px;
+
+      @media screen and (width <= 700px) {
+        width: 230px;
+      }
+
+      @media screen and (width <= 1200px) {
+        margin: 21px auto;
+      }
     }
   }
 }

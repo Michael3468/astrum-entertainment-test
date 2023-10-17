@@ -10,8 +10,6 @@ interface IButtonProps {
   p?: number;
   border?: string;
   borderRadius?: number;
-  width?: number;
-  fontSize?: string;
 }
 
 // eslint-disable-next-line import/prefer-default-export

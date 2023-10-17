@@ -1,4 +1,5 @@
-import { SetPack } from '../../entities';
+import { Box, SetPack } from '../../entities';
+import BoxImage from '../../shared/assets/img/box.png';
 import Vito from '../../shared/assets/img/Vito_1.png';
 import { Button, SpotImage } from '../../shared/UI';
 import { buttons, setPack } from './assets/constants';
@@ -29,13 +30,11 @@ const SetScreen = () => (
       {/* buttons */}
       <div className="set__pack-buttons">
         {buttons.map((button) => (
-          <div className="set__pack-button">
+          <div key={button.text} className="set__pack-button">
             <Button
               backgroundColor="black"
               border="1px solid rgba(103, 29, 0, 0.48)"
               link={button.link}
-              pb={4}
-              pt={2}
               text={button.text}
               textColor="#671D00"
             />
@@ -45,6 +44,10 @@ const SetScreen = () => (
 
       <div className="set__pack-table">
         <SetPack setPack={setPack} />
+      </div>
+
+      <div className="set__pack-order">
+        <Box image={BoxImage} price={399} />
       </div>
     </div>
   </div>

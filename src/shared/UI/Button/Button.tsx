@@ -16,34 +16,43 @@ const Button: FC<IButtonProps> = ({
   p,
   border,
   borderRadius,
-  width,
-  fontSize,
-}) => (
-  <button
-    className={styles.button}
-    style={{
-      color: `${textColor || 'black'}`,
-      backgroundColor: `${backgroundColor || 'white'}`,
-      paddingTop: `${pt || 0}px`,
-      paddingLeft: `${pl || 0}px`,
-      paddingRight: `${pr || 0}px`,
-      paddingBottom: `${pb || 0}px`,
-      padding: `${p || ''}px`,
-      border: `${border || 'none'}`,
-      borderRadius: `${borderRadius || 0}px`,
-      width: `${width ? `${width}vw` : '100%'}`,
-      fontSize: `${fontSize || '12px'}`,
-    }}
-    type="button"
-  >
-    {link ? (
-      <Link style={{ color: textColor }} to={link}>
-        {text}
-      </Link>
-    ) : (
-      text
-    )}
-  </button>
-);
+}) => {
+  const paddings = {
+    paddingTop: `${pt ? `${pt}px` : ''}`,
+    paddingLeft: `${pl ? `${pl}px` : ''}`,
+    paddingRight: `${pr ? `${pr}px` : ''}`,
+    paddingBottom: `${pb ? `${pb}px` : ''}`,
+    padding: `${p ? `${p}px` : ''}`,
+  };
+
+  return (
+    <button
+      className={styles.button}
+      style={{
+        color: `${textColor || 'black'}`,
+        backgroundColor: `${backgroundColor || 'white'}`,
+        border: `${border || 'none'}`,
+        borderRadius: `${borderRadius || 0}px`,
+        ...(!link ? paddings : {}),
+      }}
+      type="button"
+    >
+      {link ? (
+        <Link
+          className={styles.link}
+          style={{
+            color: textColor,
+            ...paddings,
+          }}
+          to={link}
+        >
+          {text}
+        </Link>
+      ) : (
+        text
+      )}
+    </button>
+  );
+};
 
 export default Button;
