@@ -16,18 +16,18 @@ import './CollectorsEdition.styles.scss';
 const CollectorsEdition: FC<ICollectorsEditionProps> = ({ editionImage, caption, text }) => (
   <div className="collectors-edition">
     {/* background and images */}
-    <img className="collectors-edition__background" src={Background} />
-    <img className="collectors-edition__layer_left" src={LayerLeft} />
-    <img className="collectors-edition__layer_right" src={LayerRight} />
-    <img className="collectors-edition__mafia-costume_left" src={MafiaCostumeLeft} />
-    <img className="collectors-edition__mafia-costume_right" src={MafiaCostumeRight} />
-    <img className="collectors-edition__layer_bottom" src={LayerBottom} />
-    <img className="collectors-edition__glow_bottom" src={GlowBottom} />
-    <img className="collectors-edition__glow_center" src={GlowCenter} />
-    <img className="collectors-edition__logo" src={Logo} />
+    <img alt="background" className="collectors-edition__background" src={Background} />
+    <img alt="" className="collectors-edition__layer_left" src={LayerLeft} />
+    <img alt="" className="collectors-edition__layer_right" src={LayerRight} />
+    <img alt="" className="collectors-edition__mafia-costume_left" src={MafiaCostumeLeft} />
+    <img alt="" className="collectors-edition__mafia-costume_right" src={MafiaCostumeRight} />
+    <img alt="" className="collectors-edition__layer_bottom" src={LayerBottom} />
+    <img alt="" className="collectors-edition__glow_bottom" src={GlowBottom} />
+    <img alt="" className="collectors-edition__glow_center" src={GlowCenter} />
+    <img alt="allods logo" className="collectors-edition__logo" src={Logo} />
 
     {/* edition image */}
-    <img className="collectors-edition__edition-image" src={editionImage} />
+    <img alt="edition image" className="collectors-edition__edition-image" src={editionImage} />
 
     {/* text */}
     <div className="collectors-edition__info">

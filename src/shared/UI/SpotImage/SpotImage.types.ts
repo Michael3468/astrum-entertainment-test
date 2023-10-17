@@ -1,4 +1,5 @@
 interface ISpotImageProps {
+  altText: string;
   image: string;
   color: string;
   imgWidth: number;

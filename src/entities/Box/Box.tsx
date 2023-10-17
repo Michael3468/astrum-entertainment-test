@@ -6,7 +6,7 @@ import { IBoxProps } from './Box.types';
 
 const Box: FC<IBoxProps> = ({ image, price }) => (
   <div className={styles.box}>
-    <img className={styles.image} src={image} />
+    <img alt="Box with game" className={styles.image} src={image} />
 
     <div className={styles.order}>
       <span className={styles.price}>{`${price} ₽`}</span>

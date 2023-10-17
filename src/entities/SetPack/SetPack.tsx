@@ -10,6 +10,7 @@ const SetPack: FC<ISetPackProps> = ({ setPack }) => (
         <tr className="set-pack-body-row">
           <td className="set-pack-col-1 set-pack-body-col-1">
             <img
+              alt={item.itemName}
               className="set-pack-body-col-1-img"
               src={`/src/shared/assets/img/${item.image}`}
             />

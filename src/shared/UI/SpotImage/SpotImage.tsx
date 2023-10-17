@@ -4,6 +4,7 @@ import { ISpotImageProps } from './SpotImage.types';
 import './SpotImage.styles.scss';
 
 const SpotImage: FC<ISpotImageProps> = ({
+  altText,
   image,
   color,
   imgWidth,
@@ -19,6 +20,7 @@ const SpotImage: FC<ISpotImageProps> = ({
       }}
     />
     <img
+      alt={altText}
       className="spot__image"
       src={image}
       style={{

@@ -13,6 +13,7 @@ const SetScreen = () => (
     <div className="set__animal">
       <div className="set__animal-position">
         <SpotImage
+          altText="Vito"
           color="#416df4"
           image={Vito}
           imgHeight={136.5}
@@ -52,7 +53,7 @@ const SetScreen = () => (
       </div>
     </div>
 
-    <img className="set__pack-glow" src={GlowBottom} />
+    <img alt="" className="set__pack-glow" src={GlowBottom} />
   </div>
 );
 
