@@ -1,10 +1,10 @@
 @import '../../shared/styles/variables.scss';
 
 .set {
+  position: relative;
   display: flex;
-  height: 55vw;
   background: url('/src/shared/assets/img/background_wall.jpg') no-repeat top center;
-  background-size: cover;
+  background-size: contain;
 
   @media screen and (width <= 1200px) {
     flex-direction: column;
@@ -80,19 +80,28 @@
 
     &-order {
       position: relative;
+      z-index: 10;
       display: flex;
       width: 450px;
       height: 300px;
       margin-top: 21px;
+      margin-bottom: 46px;
       margin-left: 3px;
+
+      @media screen and (width <= 1200px) {
+        margin: 21px auto 46px;
+      }
 
       @media screen and (width <= 700px) {
         width: 230px;
+        margin-bottom: 200px;
       }
+    }
 
-      @media screen and (width <= 1200px) {
-        margin: 21px auto;
-      }
+    &-glow {
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
     }
   }
 }

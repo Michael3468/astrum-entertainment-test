@@ -1,4 +1,5 @@
 import { Box, SetPack } from '../../entities';
+import GlowBottom from '../../shared/assets/img/BLUE_GLOW_1.png';
 import BoxImage from '../../shared/assets/img/box.png';
 import Vito from '../../shared/assets/img/Vito_1.png';
 import { Button, SpotImage } from '../../shared/UI';
@@ -50,6 +51,8 @@ const SetScreen = () => (
         <Box image={BoxImage} price={399} />
       </div>
     </div>
+
+    <img className="set__pack-glow" src={GlowBottom} />
   </div>
 );
 
