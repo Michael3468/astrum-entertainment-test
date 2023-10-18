@@ -12,7 +12,7 @@ const SetPack: FC<ISetPackProps> = ({ setPack }) => (
             <img
               alt={item.itemName}
               className="set-pack-body-col-1-img"
-              src={`/assets/img/${item.image}`}
+              src={item.image}
             />
           </td>
           <td className="set-pack-col-2 set-pack-body-col">{item.itemName}</td>
