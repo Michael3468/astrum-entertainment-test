@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.caption {
+  font-size: min(48px, 50vw);
+}
