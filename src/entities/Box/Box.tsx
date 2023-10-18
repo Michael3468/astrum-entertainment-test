@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import { Button } from '../../shared/UI';
-import styles from './Box.styles.module.scss';
+import styles from './Box.module.scss';
 import { IBoxProps } from './Box.types';
 
 const Box: FC<IBoxProps> = ({ image, price }) => (
