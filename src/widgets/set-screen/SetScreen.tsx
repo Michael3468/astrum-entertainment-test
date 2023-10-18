@@ -2,7 +2,7 @@ import { Box, SetPack } from '../../entities';
 import BoxImage from '../../entities/Box/assets/img/box.png';
 import { Button, SpotImage } from '../../shared/UI';
 import Vito from '../../shared/UI/SpotImage/assets/img/Vito_1.png';
-import { buttons, setPack } from './assets/constants';
+import { buttons, setPack1 } from './assets/constants';
 import GlowBottom from './assets/img/BLUE_GLOW_1.png';
 
 import './SetScreen.styles.scss';
@@ -45,7 +45,7 @@ const SetScreen = () => (
       </div>
 
       <div className="set__pack-table">
-        <SetPack setPack={setPack} />
+        <SetPack setPack={setPack1} />
       </div>
 
       <div className="set__pack-order">

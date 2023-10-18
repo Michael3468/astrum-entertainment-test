@@ -1,48 +1,47 @@
-const buttons = [
-  {
-    text: 'Бесплатные сервера',
-    link: '/free-servers',
-  },
-  {
-    text: 'Подписочный сервер',
-    link: '/subscribe-server',
-  },
-];
+import {
+  watch,
+  toolBox,
+  rune,
+  bigSymbol,
+  mana,
+  memoryModule,
+  vitoHelper,
+} from '../img';
 
-const setPack = [
+const setPack1 = [
   {
-    image: 'watch.png',
+    image: watch,
     itemName: 'Игровое время',
     quantity2: '30 дней',
   },
   {
-    image: 'toolbox.png',
+    image: toolBox,
     itemName: 'Запечатанный набор инструментов',
     quantity1: '1',
     quantity2: '1',
   },
   {
-    image: 'rune.png',
+    image: rune,
     itemName: 'Хрупкая чистая руна 10-й ступени',
     quantity1: '1',
   },
   {
-    image: 'big_symbol.png',
+    image: bigSymbol,
     itemName: 'Большой символ изобилия творца',
     quantity1: '10',
   },
   {
-    image: 'mana.png',
+    image: mana,
     itemName: 'Мана-батарея',
     quantity2: '20',
   },
   {
-    image: 'memory_module.png',
+    image: memoryModule,
     itemName: 'Модуль памяти',
     quantity2: '10',
   },
   {
-    image: 'vito_helper.png',
+    image: vitoHelper,
     itemName: 'Помощник Вито',
     quantity1: '1',
     quantity2: '1',
@@ -50,4 +49,4 @@ const setPack = [
 ];
 
 // eslint-disable-next-line import/prefer-default-export
-export { buttons, setPack };
+export { setPack1 };
