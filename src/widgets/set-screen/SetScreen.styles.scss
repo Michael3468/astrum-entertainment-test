@@ -3,7 +3,7 @@
 .set {
   position: relative;
   display: flex;
-  background: url('/src/shared/assets/img/background_wall.jpg') no-repeat top 33px center;
+  background: url('./assets/img/background_wall.jpg') no-repeat top 33px center;
   background-size: contain;
 
   @media screen and (width <= 1200px) {

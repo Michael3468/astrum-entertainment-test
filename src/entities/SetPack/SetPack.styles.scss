@@ -42,16 +42,22 @@
       font-size: calc(12px + 0.2vw);
 
       &-1 {
+        width: 3.3vw;
+        min-width: 40px;
+        max-width: 63.35px; // for 1920px
+        height: 3.31vw;
+        min-height: 40px;
+        max-height: 63.55px; // for 1920px
         margin-top: 4px;
         margin-left: 5px;
 
         &-img {
-          width: 3.3vw;
-          min-width: 40px;
-          max-width: 63.35px; // for 1920px
-          height: 3.31vw;
-          min-height: 40px;
-          max-height: 63.55px; // for 1920px
+          width: inherit;
+          min-width: inherit;
+          max-width: inherit; // for 1920px
+          height: inherit;
+          min-height: inherit;
+          max-height: inherit; // for 1920px
         }
       }
 

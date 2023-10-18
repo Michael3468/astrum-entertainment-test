@@ -1,5 +1,5 @@
-import EditionImage from '../../shared/assets/img/boxes.png';
 import { CollectorsEdition, SetScreen } from '../../widgets';
+import EditionImage from '../../widgets/collectors-edition/assets/img/boxes.png';
 
 import './Main.styles.scss';
 

@@ -1,9 +1,9 @@
 import { Box, SetPack } from '../../entities';
-import GlowBottom from '../../shared/assets/img/BLUE_GLOW_1.png';
-import BoxImage from '../../shared/assets/img/box.png';
-import Vito from '../../shared/assets/img/Vito_1.png';
+import BoxImage from '../../entities/Box/assets/img/box.png';
 import { Button, SpotImage } from '../../shared/UI';
+import Vito from '../../shared/UI/SpotImage/assets/img/Vito_1.png';
 import { buttons, setPack } from './assets/constants';
+import GlowBottom from './assets/img/BLUE_GLOW_1.png';
 
 import './SetScreen.styles.scss';
 
