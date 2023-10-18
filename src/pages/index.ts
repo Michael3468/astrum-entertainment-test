@@ -1,4 +1,4 @@
 import Main from './Main';
+import PageNotFound from './PageNotFound';
 
-// eslint-disable-next-line import/prefer-default-export
-export { Main };
+export { Main, PageNotFound };

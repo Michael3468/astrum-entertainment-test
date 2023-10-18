@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './Button.styles.module.scss';
+import styles from './Button.module.scss';
 import { IButtonProps } from './Button.types';
 
 const Button: FC<IButtonProps> = ({
