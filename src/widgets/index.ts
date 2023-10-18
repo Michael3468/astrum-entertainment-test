@@ -1,4 +1,4 @@
 import CollectorsEdition from './collectors-edition';
+import SetScreen from './set-screen';
 
-// eslint-disable-next-line import/prefer-default-export
-export { CollectorsEdition };
+export { CollectorsEdition, SetScreen };

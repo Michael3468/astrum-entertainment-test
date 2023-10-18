@@ -44,7 +44,9 @@
       bottom: 0;
       left: 0;
       width: 30vw;
+      max-width: 576px; // for 1920px
       height: 45.6vw;
+      max-height: 875.5px; // for 1920px
     }
 
     &_right {
@@ -52,7 +54,9 @@
       right: 1.33%;
       bottom: 0;
       width: 35.2vw;
+      max-width: 675.8px; // for 1920px
       height: 45.6vw;
+      max-height: 875.5px; // for 1920px
     }
   }
 
@@ -66,11 +70,16 @@
     &_bottom {
       bottom: 0;
       width: 96vw;
+
+      // for 1920px
+      max-width: 1843.2px;
       height: 9vw;
+      max-height: 172.8px;
     }
 
     &_center {
       width: 96vw;
+      max-width: 1843.2px; // for 1920px
       mix-blend-mode: screen;
     }
   }
@@ -80,6 +89,7 @@
     position: absolute;
     left: 50%;
     width: 19.6vw;
+    max-width: 376.3px; // for 1920px
     transform: translateX(-50%);
   }
 
@@ -89,6 +99,7 @@
     top: 26.27%;
     left: 48.65%;
     width: 39.85vw;
+    max-width: 765px; // for 1920px
     transform: translateX(-50%);
   }
 
@@ -105,8 +116,8 @@
   }
 
   &__caption {
-    font-size: calc(14px + 1.46vw);
-    line-height: 1.55vw;
+    font-size: min(42px, calc(14px + 1.46vw));
+    line-height: min(30px, 1.56vw);
 
     @media screen and (width <= 700px) {
       text-shadow: 1px 1px 1px black;
@@ -114,7 +125,7 @@
   }
 
   &__text {
-    font-size: calc(10px + 0.522vw);
+    font-size: min(20px, calc(10px + 0.522vw));
 
     @media screen and (width <= 700px) {
       text-shadow: 1px 1px 1px black;

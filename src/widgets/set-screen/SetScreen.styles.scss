@@ -1,0 +1,123 @@
+@import '../../shared/styles/variables.scss';
+
+.set {
+  position: relative;
+  display: flex;
+  background: url('./assets/img/background_wall.jpg') no-repeat top 33px center;
+  background-size: contain;
+
+  @media screen and (width <= 1200px) {
+    flex-direction: column;
+  }
+
+  &__animal {
+    width: 50%;
+
+    @media screen and (width <= 1200px) {
+      width: 100%;
+    }
+
+    &-position {
+      width: 34vw;
+      max-width: 652.8px; // for 1920px
+      height: 34vw;
+      max-height: 652.8px; // for 1920px
+      margin-top: min(203.5px, 10.6vw);
+      margin-left: min(230.4px, 12vw);
+
+      @media screen and (width <= 1200px) {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__pack {
+    width: 50%;
+    padding-right: min(328.4px, 17.1vw);
+
+    @media screen and (width <= 1200px) {
+      width: 100%;
+      padding-top: 10vw;
+      padding-right: 12vw;
+      padding-left: 12vw;
+    }
+
+    @media screen and (width <= 700px) {
+      width: 100%;
+      padding-top: 10vw;
+      padding-right: 2vw;
+      padding-left: 2vw;
+    }
+
+    &-caption {
+      margin-top: min(57.6px, 3vw);
+      color: $color-third;
+      font-size: min(30px, calc(10px + 1.04vw));
+
+      @media screen and (width <= 700px) {
+        text-align: center;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex: 0.3;
+      flex-wrap: wrap;
+      gap: 10px 11px;
+      justify-content: flex-end;
+      margin-top: min(45.12px, 2.35vw);
+
+      @media screen and (width <= 700px) {
+        gap: 10px 1vw;
+      }
+    }
+
+    &-button {
+      width: min(140.15px, 7.3vw);
+      height: auto;
+      min-height: 23px;
+      font-size: 12px;
+      letter-spacing: 0.1px;
+
+      @media screen and (width <= 1200px) {
+        width: 18vw;
+      }
+
+      @media screen and (width <= 700px) {
+        width: 22.2vw;
+        font-size: 10px;
+      }
+    }
+
+    &-table {
+      margin-top: 0.45vw;
+    }
+
+    &-order {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      width: 450px;
+      height: 300px;
+      margin-top: 21px;
+      margin-bottom: 46px;
+      margin-left: 3px;
+
+      @media screen and (width <= 1200px) {
+        margin: 21px auto 46px;
+      }
+
+      @media screen and (width <= 700px) {
+        width: 230px;
+        margin-bottom: 200px;
+      }
+    }
+
+    &-glow {
+      position: absolute;
+      bottom: 0;
+      width: min(1920px, 100vw);
+    }
+  }
+}

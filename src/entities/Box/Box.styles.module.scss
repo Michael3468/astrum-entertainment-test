@@ -1,0 +1,32 @@
+.box {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+}
+
+.order {
+  position: absolute;
+  top: 156px;
+  left: 263px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (width <= 700px) {
+    top: 330px;
+    left: 25px;
+  }
+}
+
+.price {
+  font-size: min(49.6px, calc(40px + 0.5vw));
+}
+
+.button {
+  width: 180px;
+  height: 40px;
+  margin-top: 12px;
+  font-size: 17px;
+  letter-spacing: -0.5px;
+}

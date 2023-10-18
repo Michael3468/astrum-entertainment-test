@@ -1,5 +1,6 @@
 @import './shared/styles/fonts.scss';
 @import './shared/styles/variables.scss';
+@import './shared/styles/mixins.scss';
 
 * {
   box-sizing: border-box;
@@ -16,9 +17,15 @@ body {
   font-size: 14px;
   font-family: $font-main;
   background-color: $background-color;
+
+  @include hide-scroll-bars;
 }
 
 h1 {
+  font-family: $font-second;
+}
+
+h2 {
   font-family: $font-second;
 }
 
